@@ -1,0 +1,10 @@
+services:
+  # Nome do serviço da sua API.
+  app:
+    # Instrui o Compose a construir a imagem a partir do Dockerfile no diretório atual ('.').
+    build: .
+    container_name: imersao-alura
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
